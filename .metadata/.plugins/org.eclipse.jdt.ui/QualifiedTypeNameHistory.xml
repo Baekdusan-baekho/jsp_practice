@@ -3,6 +3,6 @@
     <fullyQualifiedTypeName name="user.User"/>
     <fullyQualifiedTypeName name="org.apache.tomcat.jni.User"/>
     <fullyQualifiedTypeName name="javax.servlet.http.HttpSession"/>
-    <fullyQualifiedTypeName name="java.lang.String"/>
     <fullyQualifiedTypeName name="javax.servlet.http.Cookie"/>
+    <fullyQualifiedTypeName name="java.lang.String"/>
 </qualifiedTypeNameHistroy>
