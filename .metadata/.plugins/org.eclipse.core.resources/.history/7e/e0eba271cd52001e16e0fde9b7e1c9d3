@@ -1,0 +1,22 @@
+package com.jsp.board.service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.jsp.board.model.BoardRepository;
+import com.jsp.board.model.BoardVO;
+
+public class SearchService implements IBoardService {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		String keyword = request.getParameter("keyword");
+		
+		
+		
+		BoardRepository.getInstance().search(keyword);
+		
+
+	}
+
+}

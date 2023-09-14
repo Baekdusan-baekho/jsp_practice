@@ -14,6 +14,7 @@ import java.time.LocalDateTime;
  
  
  자바 빈 (java bean)
+ 자바 객체
  웹 프로그래밍에서 어떠한 객체를 가지고 오기 위한 기법이며, 자바 언어로 작성된
  클래스를 일반적으로 부르는 호칭입니다.
  

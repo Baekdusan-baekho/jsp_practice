@@ -1,0 +1,31 @@
+package com.jsp.board.service;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.jsp.board.model.BoardRepository;
+import com.jsp.board.model.BoardVO;
+
+public class UpdateService implements IBoardService {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		
+//		int bId = Integer.parseInt(request.getParameter("bId"));
+//		BoardVO vo = BoardRepository.getInstance().getContent(bId);
+//		
+//		
+//		
+//		
+//		String content = request.getParameter("content");
+//		vo.setContent(content);
+//		BoardRepository.getInstance().regist(vo); //글 등록 완료.
+		
+		int bId = Integer.parseInt(request.getParameter("bId"));
+		BoardVO vo = BoardRepository.getInstance().getContent(bId);
+		request.setAttribute("acticle", vo);
+		request.setAttribute("boardNo", bId);
+
+	}
+
+}
