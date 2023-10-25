@@ -43,6 +43,8 @@ public class BoardController extends HttpServlet {
 			
 		String uri = request.getRequestURI();
 		uri = uri.substring(request.getContextPath().length()+1, uri.lastIndexOf("."));
+	
+		
 		
 		System.out.println("정제된 uri: " + uri);
 		

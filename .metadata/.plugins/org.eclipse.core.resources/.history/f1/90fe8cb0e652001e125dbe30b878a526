@@ -1,0 +1,31 @@
+package com.jsp.board.service;
+
+import java.time.LocalDateTime;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.jsp.board.model.BoardRepository1;
+import com.jsp.board.model.BoardVO1;
+
+public class RegistService1 implements IBoardService1 {
+
+	@Override
+	public void execute(HttpServletRequest request, HttpServletResponse response) {
+		String writer = request.getParameter("writer");
+		String title = request.getParameter("title");
+		String content = request.getParameter("content");
+		BoardVO1 vo = new BoardVO1();
+		vo.setWriter1(writer);
+		vo.setcontent1(content);
+		vo.settitle1(title);
+		vo.setRegdate(LocalDateTime.now());
+		
+		BoardRepository1.getInstance().regist(vo);
+		
+		
+		
+
+	}
+
+}
